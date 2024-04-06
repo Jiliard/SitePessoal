@@ -1,6 +1,6 @@
 img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 40%;
     border : 4px solid white
 }
@@ -9,7 +9,7 @@ img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border : 5px solid white
+    border : 5px solid black
 }
 
 body {
@@ -20,16 +20,20 @@ body {
 
 .azul {
     background-color: #1E90FF;
-    padding: 1%;
+    margin-left: 260px;
+    padding: 10px;
+    width: 97.8%;
 }
 
 .preto {
     background-color: black;
-    padding: 1%;
+    margin-left: 260px;
+    padding: 10px;
+    width: 97.8%;
 }
 
 html {
-    font-size: 20px;
+    font-size: 19px;
     display: flex;
     text-align: center;
 }
@@ -49,10 +53,31 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 1%;
+    margin-left: 260px;
 }
 
 .lado {
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    padding: 30px;
+}
+
+aside {
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+    color: black;
+}
+
+#top {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgb(25, 25, 25);
+}
+
+#margintop {
+    margin-top: 40px;
 }
