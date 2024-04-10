@@ -16,25 +16,48 @@ body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-areas:
+        "h h"
+        "a m";
+    grid-template-columns: 260px auto;
+    grid-template-rows: 50px auto;
+    grid-gap: 0px 0px;
+    overflow-y: hidden;
+    max-height: 100vh;
+}
+
+aside {
+    grid-area: a;
+    /* width: 260px; */
+    height: 100vh-2px;
+    background-color: blue;
+    color: black;
+    margin: 2px;
+}
+
+main {
+    grid-area: m;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* width: 100vw-260px; */
+    overflow-y: scroll;
 }
 
 .azul {
     background-color: #1E90FF;
-    margin-left: 260px;
     padding: 10px;
-    width: 97.8%;
 }
 
 .preto {
     background-color: black;
-    margin-left: 260px;
     padding: 10px;
-    width: 97.8%;
 }
 
 html {
     font-size: 19px;
-    display: flex;
     text-align: center;
 }
 
@@ -52,8 +75,8 @@ center {
 nav {
     display: flex;
     justify-content: space-around;
-    padding: 1%;
-    margin-left: 260px;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .lado {
@@ -63,21 +86,13 @@ nav {
     padding: 30px;
 }
 
-aside {
-    width: 260px;
-    height: 100%;
-    position: fixed;
-    background-color: white;
-    color: black;
-}
-
-#top {
-    width: 100%;
-    height: 50px;
-    position: fixed;
+header {
     background-color: rgb(25, 25, 25);
+    grid-area: "h";
+    grid-column: span 2;
 }
 
-#margintop {
-    margin-top: 40px;
+footer {
+    background-color: rgb(25, 25, 25);
+    padding-bottom: 50px;
 }
